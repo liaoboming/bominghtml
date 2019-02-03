@@ -1,0 +1,46 @@
+div#all{
+	width:1600px;
+	height:1200px;
+	background:#ffffff;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+div#header{
+	width:1600px;
+	height:100px;
+	background:#2660a9;
+}
+
+div#left{
+	width:796px;
+	height:900px;
+	float:left;
+	background:#d1a2e3;
+	border:2px #000000 solid;
+}
+div#right{
+	width:796px;
+	height:900px;
+	float:right;
+	background:#d1a2e3;
+	border:2px #000000 solid;
+}
+
+div#center{
+	width:1600px;
+	height:auto;
+	border:2px #000000 solid;
+	text-align:center;
+}
+
+div#footer{
+	width:1600px;
+	height:70px;
+	background:#2660a9;
+	clear: both;
+    margin-top:5px;
+    text-align:center;
+    color:#ffffff;
+}

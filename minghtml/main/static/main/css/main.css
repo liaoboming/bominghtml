@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+nav ul {
+  width:1200px;
+  margin:auto;
+  padding: auto;
+  text-align: center;
+}
+nav ul#menu {
+  font-size:25px;
+  display: block;
+  padding: 8px 8px 8px 8px;    
+  background-color:#dcdcdc;
+  border-radius: 15px;
+}
+
+nav ul#menu li {
+  display: inline-block;
+  margin-right:1.5em;
+  margin-left:1.5em;
+}
+
+nav ul#menu a {color:#000000;}
+
+nav ul#menu a:hover {
+  color:#ffffff;
+  background-color:#0000ff;
+}
+
+a{
+  color:#2e3436;
+  text-decoration:none;
+}
+th{
+  border:2px dashed;
+}
+
+.acyut{
+  color:#0000ff;
+}
+
+table.tabcyut{
+	background-color:#00ffff;
+	width:1600px;
+	height:70px;
+	border:3px solid;
+}
+
+.tdcyut{
+	font-weight:bold;
+	font-size:40px;
+	text-align:center;
+}
+
+table.tab{
+	width:740px;
+	height:70px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.tdtitle{
+	font-weight:bold;
+	font-size:30px;
+	text-align:center;
+	color:#006400;
+}
+
+.tdtitle a{
+	font-weight:bold;
+	font-size:30px;
+	text-align:center;
+	color:#006400;
+}
+
+.tdall{
+	width:245px;
+	font-size:25px;
+	text-align:center;
+}
+
+.tdtea{
+	font-size:25px;
+	border:1px solid;
+	text-align:center;
+}
+
+.tdteaall{
+	width:25%;
+	font-size:20px;
+	text-align:center;
+}
+
+.tab td:hover{ background-color:#ffffff;}
+.tdall a:hover{	color:#ef2929;}
+.trtea td:hover{ background-color:#BA55D3;}
+.trtea a:hover{	color:#000000;}
+
