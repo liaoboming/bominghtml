@@ -1,0 +1,12 @@
+<table width='1600px'>
+	   <tr>
+	    <td><a href="{% url 'main:main' %}"><font color='#ffffff'><h1>保齡球連結網站</h1></font></a></td>
+	  	<td>{% include 'other/menu.html' %}</td>
+	  	{% if user.is_authenticated %}
+	    <td><a href="{% url 'account:logout' %}"><font color='#ffffff'>登出 ({{ user.username }})</font></a></td>
+	    {% else %}
+	  	<td><a href="{% url 'account:register' %}"><font color='#ffffff'>註冊</font></a></td>
+	  	<td><a href="{% url 'account:login' %}"><font color='#ffffff'>登入</font></a></td>
+	  	{% endif %}
+	   </tr>
+	</table>

@@ -24,6 +24,8 @@ SECRET_KEY = '_2wm(vq_h6*no5++ywz4vl0bx=6_*k)@z=#w6$_(1c*2($3r1y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+if 'DYNO' in os.environ:    # Running on Heroku
+    DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -74,17 +76,23 @@ WSGI_APPLICATION = 'minghtml.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'minghtmldb',
-        'USER': 'ming',
-        'PASSWORD': 'ming',
-        'HOST': 'localhost',
-        'PORT': '',
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'minghtmldb',
+            'USER': 'ming',
+            'PASSWORD': 'ming',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
     }
-}
+else:   # Running on Heroku
+    # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+    DATABASES = {'default':dj_database_url.config()}
+    # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Password validation
@@ -126,3 +134,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'account.User'
 LOGIN_URL = '/account/login/'
+STATIC_ROOT = 'staticfiles'
