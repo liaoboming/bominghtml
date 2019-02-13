@@ -79,6 +79,7 @@ table.tab{
 
 .tdall{
 	width:245px;
+	height:25px;
 	font-size:25px;
 	text-align:center;
 }
@@ -93,6 +94,15 @@ table.tab{
 	width:25%;
 	font-size:20px;
 	text-align:center;
+}
+
+.image{
+	width:25px;
+	height:25px;
+}
+.highimage{
+	width:90px;
+	height:25px;
 }
 
 .tab td:hover{ background-color:#ffffff;}
