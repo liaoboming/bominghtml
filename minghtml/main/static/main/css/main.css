@@ -97,8 +97,9 @@ table.tab{
 }
 
 .image{
-	width:25px;
-	height:25px;
+	width:28px;
+	height:28px;
+	vertical-align:text-bottom;
 }
 .highimage{
 	width:90px;
@@ -108,5 +109,5 @@ table.tab{
 .tab td:hover{ background-color:#ffffff;}
 .tdall a:hover{	color:#ef2929;}
 .trtea td:hover{ background-color:#BA55D3;}
-.trtea a:hover{	color:#000000;}
+
 
