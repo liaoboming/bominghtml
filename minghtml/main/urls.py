@@ -5,5 +5,5 @@ from main import views
 app_name = 'main'
 urlpatterns = [
     path('', views.main, name='main'),
-    path('cyut/', views.cyut, name='cyut'),
+    path('cyut/share483jiy0ifhvjr125/', views.cyut, name='cyut'),
 ]
