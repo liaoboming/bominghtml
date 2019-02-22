@@ -1,11 +1,20 @@
 <table style='float:right;width:400px;'>
-<tr>
-	<td style='color:#FFFF00;font-size:20px;'>網站規則</td>
-	<td style='color:#FFFF00;font-size:20px;'>版本資訊</td>
-</tr>
-<tr>
-	<td style='color:#FFFF00;font-size:20px;'>聯絡版主</td>
-	<td style='color:#FFFF00;font-size:20px;'>版主資訊</td>
-</tr>
+	<tr>
+		<td style='color:#FFFF00;font-size:20px;'>網站規則</td>
+		<td style='color:#FFFF00;font-size:20px;'>版本資訊</td>
+	</tr>
+	<tr>
+		<td style='color:#FFFF00;font-size:20px;'>聯絡版主</td>
+		<td style='color:#FFFF00;font-size:20px;'>版主資訊</td>
+	</tr>
 </table>
-<font size="5"><b>保齡球連結網站大改1.3版</b></font><br><font size="3">公布日期：2019年2月22日</font>
+
+
+<table style='float:left;width:400px;'>
+  <tr><td><font size="5"><b>保齡球連結網站1.5版</b></font></td></tr>
+  <tr><td><font size="3">公布日期：2019年2月22日</font></td></tr>
+</table>
+
+{% for message in messages %}
+  <font style='color:#00ffff;font-size:30px;' class="{{ message.tags }}">{{ message }}</font>
+{% endfor %}
