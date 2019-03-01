@@ -13,17 +13,16 @@
     <div id='header'>
     {% include 'other/head.html' %}
 	</div>
-  <hr size="5" color="red">
+  
 	<table class='tabcyut'>
 	  <tr><td class='tdcyut'><a class='acyut' href="https://www.cyut.edu.tw/" target="_new">朝陽科技大學首頁</a></td></tr>
 	</table>
-  <hr size="5" color="red">
-  	{% if user.is_authenticated %}
+	{% if user.is_authenticated %}
 	<table class='tabcyut'>
 		<tr><td class='tdcyut'><a class='acyut' href="{% url 'main:cyut' %}" target="_new">分享專區</a></td></tr>
 	</table>
-  <hr size="5" color="red">
-  {% endif %}
+  	{% endif %}
+  
 	  <div id='left'>
 		{% include 'other/mainleft.html' %}
 	  </div>
@@ -31,7 +30,6 @@
 		{% include 'other/mainright.html' %}
 	  </div>
    <table><tr></tr></table>
-  <hr size="5" color="red">
   <div id='footer'>
       {% include 'other/footer.html' %}
   </div>

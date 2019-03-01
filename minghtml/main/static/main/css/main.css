@@ -39,14 +39,14 @@ th{
 }
 
 .acyut{
-  color:#0000ff;
+  color:#ffffff;
 }
 
 table.tabcyut{
-	background-color:#00ffff;
+	background-color:#2660a9;
 	width:1600px;
 	height:70px;
-	border:3px solid;
+	border-top:2px solid #000000;
 }
 
 .tdcyut{
@@ -103,7 +103,7 @@ table.tab{
 }
 .highimage{
 	width:90px;
-	height:25px;
+	height:28px;
 }
 
 .tab td:hover{ background-color:#ffffff;}

@@ -14,18 +14,24 @@ div#header{
 }
 
 div#left{
-	width:796px;
+	width:797px;
 	height:900px;
 	float:left;
-	background:#d1a2e3;
-	border:2px #000000 solid;
+	background:#F5F5F5;
+	border-top:2px #000000 solid;
+	border-left:2px #000000 solid;
+	border-right:1px #000000 solid;
+	border-bottom:2px #000000 solid;
 }
 div#right{
-	width:796px;
+	width:797px;
 	height:900px;
 	float:right;
-	background:#d1a2e3;
-	border:2px #000000 solid;
+	background:#F5F5F5;
+	border-top:2px #000000 solid;
+	border-left:1px #000000 solid;
+	border-right:2px #000000 solid;
+	border-bottom:2px #000000 solid;
 }
 
 div#center{
