@@ -69,4 +69,11 @@
 		<td class='tdall'><a href="https://www.apowersoft.tw/free-online-screen-recorder" target="_blank">螢幕擷取程式</a></td>
 		<td class='tdall'><a href="http://convert2mp3.net/en/" target="_blank">音樂轉檔</a></td>
 	</tr>
+	{% if user.is_superuser %}
+	<tr>
+		<td class='tdall'><a href="https://docs.google.com/spreadsheets/d/1hSYlIQQUgt24Vu5mzcj00dnzzlEB1Hqm9XYdH_EMM70/edit?usp=sharing" target="_blank">每日消費</a></td>
+		<td class='tdall'><a href="https://docs.google.com/spreadsheets/d/1D1gkHb89Bf4J1nOvahThCbIb1xPvCaQFYhaD-OlYOYc/edit?usp=sharing" target="_blank">帳戶餘額</a></td>
+		<td class='tdall'><a href="https://docs.google.com/spreadsheets/d/13yaOaio47qK1id0uU_RkpZJc31x6ojMcbw6hhl4sYkc/edit#gid=1848060071" target="_blank">508班表</a></td>
+	</tr>
+	{% endif %}
 </table>
