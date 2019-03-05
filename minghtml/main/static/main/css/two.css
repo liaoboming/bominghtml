@@ -1,0 +1,11 @@
+.versiontd{
+	border:1px #000000 solid;
+	width:520px;
+	font-size:20px;
+}
+.versiontdtitle{
+	border:1px #000000 solid;
+	width:520px;
+	color:red;
+	font-size:25px;
+}

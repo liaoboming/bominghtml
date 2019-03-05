@@ -8,6 +8,12 @@ def main(request):
 def cyut(request):
     return render(request,'main/cyut.html')
 
+def version(request):
+    return render(request,'main/version.html')
+
+def connection(request):
+    return render(request,'main/connection.html')
+
 def admin_required(func):
     def auth(request, *args, **kwargs):
         if not request.user.is_superuser:

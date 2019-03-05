@@ -1,0 +1,35 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>保齡球連結網站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'main/css/div.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/account.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/two.css' %}">
+</head>
+<body>
+  <div id='all'>
+    <div id='header'>
+    {% include 'other/head.html' %}
+	</div>
+  	<div id='center'>
+	  	<table style='margin-left:auto;	margin-right:auto;'>
+	  	  <tr><td class='versiontd' colspan='3'>保齡球連結網站版本資訊</td></tr>
+	  	  <tr><td class='versiontdtitle'>版本<td class='versiontdtitle'>上線日期<td class='versiontdtitle'>內容</td></tr>
+	  	  <tr><td class='versiontd'>1.0版<td class='versiontd'>2019年02月08日	<td class='versiontd'>出版上線 伺服器連線測試</td></tr>
+	  	  <tr><td class='versiontd'>1.2版<td class='versiontd'>2019年02月11日<td class='versiontd'>提供註冊功能</td></tr>
+	  	  <tr><td class='versiontd'>1.4版<td class='versiontd'>2019年02月15日<td class='versiontd'>修改網頁</td></tr>
+	  	  <tr><td class='versiontd'>1.5版<td class='versiontd'>2019年02月22日<td class='versiontd'>1.正式公開上線 2.關閉註冊功能 3.修改網頁</td></tr>
+	  	  <tr><td class='versiontd'>1.6版<td class='versiontd'>2019年03月01日<td class='versiontd'>修改網頁連結功能</td></tr>
+	  	  <tr><td class='versiontd'>1.7版<td class='versiontd'>2019年03月05日<td class='versiontd'>新增版本資訊、聯絡版主</td></tr>
+	  	</table>	
+  	</div>
+   <table><tr></tr></table>
+  <div id='footer'>
+      {% include 'other/footer.html' %}
+  </div>
+  </div>
+ </body>
+</html>
