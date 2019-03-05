@@ -1,12 +1,27 @@
-
-.versiontd{
-	width:520px;
-	font-size:20px;
-}
 .versiontdtitle{
 	border-top:2px purple solid;
 	border-bottom:2px purple solid;
 	width:520px;
 	color:red;
+	font-size:25px;
+}
+
+.versiontd{
+	width:520px;
+	font-size:20px;
+}
+
+.contdtitle{
+	width:200px;
+	color:red;
+	font-size:25px;
+}
+.contd1{
+	width:450px;
+	font-size:25px;
+	border-bottom:2px purple solid;
+}
+.contd{
+	width:600px;
 	font-size:25px;
 }
