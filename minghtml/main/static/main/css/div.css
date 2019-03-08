@@ -1,5 +1,5 @@
 div#all{
-	width:1600px;
+	width:1700px;
 	height:1200px;
 	background:#ffffff;
 	margin-left:auto;
@@ -8,13 +8,13 @@ div#all{
 }
 
 div#header{
-	width:1600px;
+	width:1700px;
 	height:100px;
 	background:#2660a9;
 }
 
 div#left{
-	width:797px;
+	width:847px;
 	height:900px;
 	float:left;
 	background:#F5F5F5;
@@ -24,7 +24,7 @@ div#left{
 	border-bottom:2px #000000 solid;
 }
 div#right{
-	width:797px;
+	width:847px;
 	height:900px;
 	float:right;
 	background:#F5F5F5;
@@ -35,14 +35,14 @@ div#right{
 }
 
 div#center{
-	width:1596px;
+	width:1696px;
 	height:auto;
 	border:2px #000000 solid;
 	text-align:center;
 }
 
 div#footer{
-	width:1600px;
+	width:1700px;
 	height:70px;
 	background:#2660a9;
 	clear: both;
@@ -52,7 +52,7 @@ div#footer{
 }
 
 div#work{
-	width:760px;
+	width:820px;
 	height:300px;
 	margin-left:auto;
 	margin-right:auto;
