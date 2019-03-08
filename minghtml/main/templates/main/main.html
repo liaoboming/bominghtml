@@ -17,12 +17,6 @@
 	<table class='tabcyut'>
 	  <tr><td class='tdcyut'><a class='acyut' href="https://www.cyut.edu.tw/" target="_new">朝陽科技大學首頁</a></td></tr>
 	</table>
-	{% if user.is_authenticated %}
-	<table class='tabcyut'>
-		<tr><td class='tdcyut'><a class='acyut' href="{% url 'main:cyut' %}" target="_new">分享專區</a></td></tr>
-	</table>
-  	{% endif %}
-  
 	  <div id='left'>
 		{% include 'other/mainleft.html' %}
 	  </div>

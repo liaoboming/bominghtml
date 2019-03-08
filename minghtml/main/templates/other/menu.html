@@ -5,5 +5,8 @@
   <li><a href="https://mail.google.com/mail" target="_blank">Gmail信箱</a></li>
   <li><a href="https://www.google.com.tw/maps" target="_blank">Map地圖</a></li>
   <li><a href="https://drive.google.com/drive" target="_blank">Driver雲端</a></li>
+  {% if user.is_authenticated %}
+  <li><a href="{% url 'main:cyut' %}" target="_blank"><font style='color:red;'>分享專區</font></a></li>
+  {% endif %}
 </ul>
 </nav>
