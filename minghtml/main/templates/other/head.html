@@ -3,7 +3,7 @@
 	<td style="width:250px"><a href="{% url 'main:main' %}"><font color='#ffffff'><h1>保齡球連結網站</h1></font></a></td>
 	<td style="width:1250px">{% include 'other/menu.html' %}</td>
 {% if user.is_superuser %}
-	<td align="right"><a href="{% url 'account:register' %}"><font color='#ffffff' size='5'>註冊</font></a></td>
+	<td align="right"><a href="{% url 'account:register' %}"><font color='#ffffff' size='4'>註冊</font></a></td>
 {% endif %}
 {% if user.is_authenticated %}
 	<td align="right"><a href="{% url 'account:logout' %}"><font color='#ffffff' size='5'>登出 ({{ user.username }})</font></a></td>
