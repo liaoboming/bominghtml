@@ -1,12 +1,16 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.urls.base import reverse
+from main.models import Article
+from main.forms import ArticleForm
 
 def main(request):
     return render(request,'main/main.html')
 
 def cyut(request):
-    return render(request,'main/cyut.html')
+    articles = Article.objects.all()
+    context = {'articles':articles}
+    return render(request,'main/cyut.html', context)
 
 def version(request):
     return render(request,'main/version.html')
@@ -14,9 +18,6 @@ def version(request):
 def connection(request):
     return render(request,'main/connection.html')
 
-def homework(request):
-    
-    return render(request,'main/homework.html')
 
 def admin_required(func):
     def auth(request, *args, **kwargs):

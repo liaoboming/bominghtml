@@ -1,11 +1,14 @@
 {% load staticfiles %}
+<br>
 <table class='tab'>
   <tr><th class='tdtitle' colspan='3'>功課公告專區</th></tr>
-  <tr>
-	<td class='tdall'></td>
-	<td class='tdall'></td>
-  </tr>
-
+  
+  {% for article in articles %}
+	<tr><td class='tdall'>{{ article.title }}</td></tr>
+	<tr><td class='tdall' style='padding:10px; background-color: #e9e9e9; border: thin solid gray;  border-radius: 5px;'>{{ article.content|linebreaks }}</td></tr>
+  {% endfor %}
+  
+</table>
 <p>
 
 <table class='tab'>
