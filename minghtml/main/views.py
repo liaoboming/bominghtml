@@ -14,6 +14,10 @@ def version(request):
 def connection(request):
     return render(request,'main/connection.html')
 
+def homework(request):
+    
+    return render(request,'main/homework.html')
+
 def admin_required(func):
     def auth(request, *args, **kwargs):
         if not request.user.is_superuser:

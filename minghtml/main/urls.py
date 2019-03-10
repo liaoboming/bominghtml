@@ -8,4 +8,5 @@ urlpatterns = [
     path('cyut/share483jiy0ifhvjr125/', views.cyut, name='cyut'),
     path('version/', views.version, name='version'),
     path('connection/', views.connection, name='connection'),
+    path('homework/', views.homework, name='homework'),
 ]
