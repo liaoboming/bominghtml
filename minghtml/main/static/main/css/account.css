@@ -9,3 +9,19 @@
 	line-height:30px;
 	font-size:18px;
 }
+
+label{
+	width:150px;
+	line-height:30px;
+	font-size:25px;
+}
+input{
+	width:150px;
+	line-height:30px;
+	font-size:25px;
+}
+.btn{
+	width:80px;
+	line-height:30px;
+	font-size:18px;
+}

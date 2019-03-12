@@ -15,7 +15,7 @@
 	</div>
   <div id='center'>
 
-		{% block heading %}註冊{% endblock %}
+		{% block heading %}<font size='6' color='red'>註冊</font>{% endblock %}
 		{% block content %}
 		<form method="post" action="{% url 'account:register' %}">
 		  {% csrf_token %}
@@ -24,9 +24,8 @@
 		  <input class="btn" type="reset" value="清除">
 		</form>
 		{% endblock %}
-
-</div>
-   <table><tr></tr></table>
+	<p>
+  </div>
   <div id='footer'>
       {% include 'other/footer.html' %}
   </div>

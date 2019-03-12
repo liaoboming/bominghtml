@@ -9,67 +9,62 @@ div#all{
 
 
 div#header{
-	width:1700px;
-	height:100px;
-	background:#2660a9;
+	width:1700px; height:100px; background:#2660a9;
 }
 
-div#left{
-	width:847px;
-	height:1000px;
+#left{	
+	width:847px; height:1000px;
+	border-top:2px #000000 solid; border-left:2px #000000 solid; border-right:1px #000000 solid; border-bottom:2px #000000 solid;
 	float:left;
 	background:#F5F5F5;
-	border-top:2px #000000 solid;
-	border-left:2px #000000 solid;
-	border-right:1px #000000 solid;
-	border-bottom:2px #000000 solid;
 }
-div#right{
-	width:847px;
-	height:1000px;
+
+#right{	
+	width:847px; height:1000px;
+	border-top:2px #000000 solid; border-left:1px #000000 solid; border-right:2px #000000 solid; border-bottom:2px #000000 solid;
 	float:right;
 	background:#F5F5F5;
-	border-top:2px #000000 solid;
-	border-left:1px #000000 solid;
-	border-right:2px #000000 solid;
-	border-bottom:2px #000000 solid;
 }
 
 div#center{
-	width:1696px;
-	height:auto;
+	width:1696px; height:auto;
 	border:2px #000000 solid;
 	text-align:center;
 }
 
 div#footer{
-	width:1700px;
-	height:70px;
+	width:1700px; height:70px;
 	background:#2660a9;
 	clear: both;
-    margin-top:5px;
     text-align:center;
     color:#ffffff;
 }
 
-div#work1{
-	width:820px;
-	height:300px;
-	margin-left:auto;
-	margin-right:auto;
+#work1{
+	width:820px; height:300px;
+	margin-left:auto; margin-right:auto;
+	border-top:2px #000000 solid; border-left:2px #000000 solid; border-right:2px #000000 solid; border-bottom:1px #000000 solid;
 	background:#FFFFBB;
-	border-top:2px #000000 solid;
-	border-left:2px #000000 solid;
-	border-right:2px #000000 solid;
-	border-bottom:1px #000000 solid;
-}div#work2{
-	width:820px;
-	height:200px;
-	margin-left:auto;
-	margin-right:auto;
+}
+
+#work2{
+	width:820px; height:200px;
+	margin-left:auto; margin-right:auto;
+	border-top:1px #000000 solid; border-left:2px #000000 solid; border-right:2px #000000 solid; border-bottom:2px #000000 solid;
 	background:#FFFFBB;
-	border-top:1px #000000 solid;
-	border-left:2px #000000 solid;
-	border-right:2px #000000 solid;
-	border-bottom:2px #000000 solid;
+}
+
+#verleft{
+	width:847px; height:350px;
+	border-top:2px #000000 solid; border-left:2px #000000 solid; border-right:1px #000000 solid; border-bottom:2px #000000 solid;
+	float:left;
+	text-align:center;
+	
+}
+#verright{
+	width:847px; height:350px;
+	border-top:2px #000000 solid; border-left:1px #000000 solid; border-right:2px #000000 solid; border-bottom:2px #000000 solid;
+	float:right;
+	text-align:center;
+	
 }
