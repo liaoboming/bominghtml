@@ -4,7 +4,7 @@ html, body {
 }
 
 nav ul {
-  width:1200px;
+  width:auto;
   margin:auto;
   padding: auto;
   text-align: center;
@@ -19,8 +19,8 @@ nav ul#menu {
 
 nav ul#menu li {
   display: inline-block;
-  margin-right:1.5em;
-  margin-left:1.5em;
+  margin-right:1em;
+  margin-left:1em;
 }
 
 nav ul#menu a {color:#000000;}
@@ -43,10 +43,10 @@ th{
 }
 
 table.tabcyut{
-	background-color:#2660a9;
+	background-color:#F5F5F5;
 	width:1700px;
 	height:80px;
-	border-top:2px solid #000000;
+	border-top:2px solid #000000;	border-left:2px #000000 solid; border-right:2px #000000 solid;
 }
 
 .tdcyut{
