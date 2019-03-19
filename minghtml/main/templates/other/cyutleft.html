@@ -1,18 +1,14 @@
 {% load staticfiles %}
 <br>
 <table class='tab'>
-  <tr><th class='tdtitle'>功課專區</th></tr>
+  <tr><th class='tdtitle' colspan='3'>功課專區</th></tr>
   <tr>
 	<td class='tdall'><a href='https://drive.google.com/open?id=1L5jP2nu5O41snTyfxYllRJGil5MDAFbz' target="_blank"><font style="color:red;">電子商務</font></a></td>
-  </tr>
-  <tr>
   	<td class='tdall'><a href='https://drive.google.com/open?id=1K8XifNE9YM0bj7prdFUzht-7Bn-2b7j2' target="_blank"><font style="color:red;">電腦網路</font></a></td>
-  </tr>
-  <tr>
   	<td class='tdall'><a href='https://drive.google.com/open?id=1uFYAWEXqPKLHcyUol2iwUMAiznojHODD' target="_blank"><font style="color:red;">資料庫管理系統</font></a></td>
   </tr>
   <tr>
-    <td class='tdall'><font style="font-size:15px;">※請點取紅色資料夾即可※</font></td>
+    <td class='tdall' colspan='3'><font style="font-size:15px;">※請點取紅色資料夾即可※</font></td>
   </tr>
 </table>
 
@@ -30,34 +26,43 @@
   </tr>
 </table>
 <table class='tab'>
-  <tr><td class='tdall'><a href="http://ptest.im.cyut.edu.tw/" target="_blank">*程式檢定驗證系統*</a></td></tr>
-  <tr><td class='tdall'><a href="http://www.im.cyut.edu.tw/html/html/board/p_test/ptest_board.htm" target="_blank">程式檢定公告</a></td></tr>
+  <tr>
+    <td class='tdall'><a href="http://ptest.im.cyut.edu.tw/" target="_blank">*程式檢定驗證系統*</a></td>
+    <td class='tdall'><a href="http://www.im.cyut.edu.tw/html/html/board/p_test/ptest_board.htm" target="_blank">程式檢定公告</a></td>
+  </tr>
 </table>
 
 <p>
 
 <table class='tab'>
-  <tr><th class='tdtitle' colspan='2'>下載專區</th></tr>
+  <tr><th class='tdtitle' colspan='3'>下載專區</th></tr>
   <tr>
-	<td class='tdall'><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank"><img class='image' src="{% static 'main/img1/vboxlogo.png' %}"> Virtualbox下載</a></td>
-	<td class='tdall'><a href="https://www.ubuntu-tw.org/modules/tinyd0/" target="_blank"><img class='image' src="{% static 'main/img1/ubuntu.png' %}"> UBUNTU下載</a></td>
+	<td class='tdall'><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank"><img class='image' src="{% static 'main/img1/vboxlogo.png' %}"> Virtualbox</a></td>
+	<td class='tdall'><a href="https://www.ubuntu-tw.org/modules/tinyd0/" target="_blank"><img class='image' src="{% static 'main/img1/ubuntu.png' %}"> UBUNTU</a></td>
+	<td class='tdall'><a href="http://brackets.io/" target="_blank"><img class='image' src="{% static 'main/img1/Brackets.png' %}"> Brackets</a></td>
   </tr>
   <tr>
-  	<td class='tdall' colspan='2'><a href="https://docs.microsoft.com/zh-tw/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank"><img class='image' src="{% static 'main/img1/ssms.png' %}"> SQL Server Management Studio(SSMS)下載</a></td>
+  	<td class='tdall' colspan='2'><a href="https://docs.microsoft.com/zh-tw/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank"><img class='image' src="{% static 'main/img1/ssms.png' %}"> SQL Server Management Studio(SSMS)</a></td>
+    <td class='tdall'><a href="https://www.microsoft.com/zh-tw/sql-server/sql-server-downloads" target="_blank"><img class='image' src="{% static 'main/img1/microsoftSQL.png' %}"> Microsoft SQL</a></td>
   </tr> 
   <tr>
-  	<td class='tdall'><a href="https://www.microsoft.com/zh-tw/sql-server/sql-server-downloads" target="_blank"><img class='image' src="{% static 'main/img1/microsoftSQL.png' %}"> MicrosoftSQL下載</a></td>
-  	<td class='tdall'><a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="_blank"><img class='image' src="{% static 'main/img1/sqldev.png' %}"> Oracle SQL Developer</a></td>
+  	<td class='tdall' colspan='2'><a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="_blank"><img class='image' src="{% static 'main/img1/sqldev.png' %}"> Oracle SQL Developer</a></td>
   </tr>
   <tr>
   	<td class='tdall'><a href="https://drive.google.com/file/d/1e2qRoumRlPFlucLx7nUamQWSonxLUnAa/view?usp=sharing" target="_blank">SQL安裝說明</a></td>
   	<td class='tdall'><a href="https://drive.google.com/file/d/1IoAFFXYpPCUMeCy5F9iGAxVdv_FoWK8N/view?usp=sharing" target="_blank">Oracle安裝登入說明</a></td>	
   </tr>
-  <tr>
-  	<td class='tdall'><a href="http://brackets.io/" target="_blank"><img class='image' src="{% static 'main/img1/Brackets.png' %}"> Brackets下載</a></td>
-  	<td class='tdall'><a href="#" target="_blank"></a></td>	
-  </tr>
   
+  
+</table>
+
+<p>
+<table class='tab'>
+  <tr><th class='tdtitle' colspan='2'>課表</th></tr>
+  <tr>
+	<td class='tdall'><a href="https://drive.google.com/file/d/1K8BRHTVtQKzPIxf1imRp2JF1i2wr1NP7/view?usp=sharing" target="_blank">2B</a></td>
+	<td class='tdall'><a href="https://drive.google.com/file/d/1DZHbmrzjbLSRqfSK2uMHDqRDwneN_KN8/view?usp=sharing" target="_blank">2C</a></td>
+  </tr>
 </table>
 
 <p>
