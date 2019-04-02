@@ -1,5 +1,6 @@
 {% load staticfiles %}
 <br>
+{% if user.is_authenticated %}
 <table class='tab'>
   <tr><th class='tdtitle' colspan='3'>功課專區</th></tr>
   <tr>
@@ -31,7 +32,7 @@
     <td class='tdall'><a href="http://www.im.cyut.edu.tw/html/html/board/p_test/ptest_board.htm" target="_blank">程式檢定公告</a></td>
   </tr>
 </table>
-
+{% endif %}
 <p>
 
 <table class='tab'>
@@ -53,10 +54,12 @@
   </tr>
   <tr><td class='tdall' colspan='3'><a href="https://docs.microsoft.com/zh-tw/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank"><img class='image' src="{% static 'main/img1/ssms.png' %}"> SQL Server Management Studio(SSMS)</a></td></tr>
 <tr></tr>
+{% if user.is_authenticated %}
   <tr><td class='tdall' colspan='3'><font color='green' size='6'>授權軟體</font><font color='red' size='3'>下載前通知版主</font></td></tr>
   <tr>
   	<td class='tdall' colspan='3'><a href="https://drive.google.com/open?id=1ugZx2YLE9fkOGl0xvOCYmDaBKT2E8Bv-" target="_blank"><img class='image' src="{% static 'main/img1/Office.png' %}"> Microsoft office</a></td>
   </tr>
+{% endif %}
   
 </table>
 
