@@ -1,20 +1,13 @@
 {% load staticfiles %}
 <br>
 <table class='tab'>
-  <tr><th class='tdtitle' colspan='3'>功課公告專區</th></tr>
+  <tr><th class='tdtitle' colspan='3'>公告專區</th></tr>
   
   {% for article in articles %}
 	<tr><td class='tdall'>{{ article.title }}</td></tr>
 	<tr><td class='tdall' style='padding:10px; background-color: #e9e9e9; border: thin solid gray;  border-radius: 5px;'>{{ article.content|linebreaks }}</td></tr>
   {% endfor %}
   
-</table>
-<p>
-
-<table class='tab'>
-  <tr><th class='tdtitle' colspan='5'>資訊公告專區</th></tr>
-</table>
-<p>
 <table class='tab' style="border:2px solid #000000;border-radius:10px;padding:10px">
   <tr><td class='tdall' colspan='5'><font style="color:red;">物件導向程式語言<br></font></td></tr>
   <tr>
