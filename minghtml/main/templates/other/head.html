@@ -2,14 +2,25 @@
 <table style="width:1700px;">
   <tr>
 	<td style="width:250px"><a href="{% url 'main:main' %}"><font color='#ffffff'><h1>保齡球連結網站</h1></font></a></td>
-	<td style="width:1250px">{% include 'other/menu.html' %}</td>
+	<td style="width:1250px">
+		<nav><ul id="menu" >
+		  <li><a href="https://www.google.com.tw/" target="_blank"><img class='image' src="{% static 'main/img3/google.png' %}"> Google</a></li>
+		  <li><a href="https://www.youtube.com/?gl=TW" target="_blank"><img class='image' src="{% static 'main/img3/youtube.png' %}"> Youtube</a></li>
+		  <li><a href="https://mail.google.com/mail" target="_blank"><img class='image' src="{% static 'main/img3/gmail.png' %}"> Gmail</a></li>
+		  <li><a href="https://www.google.com.tw/maps" target="_blank"><img class='image' src="{% static 'main/img3/map.png' %}"> GoogleMap</a></li>
+		  <li><a href="https://drive.google.com/drive" target="_blank"><img class='image' src="{% static 'main/img3/drive.png' %}"> GoogleDriver</a></li>
+		  {% if user.is_authenticated %}
+		  <li><a href="{% url 'main:cyut' %}" target="_blank"><font style='color:red;'>分享專區</font></a></li>
+		  {% endif %}
+		</ul></nav>
+	</td>
 {% if user.is_superuser %}
 	<td align="right"><a href="{% url 'account:register' %}"><font color='#ffffff' size='4'>註冊</font></a></td>
 {% endif %}
 {% if user.is_authenticated %}
-	<td align="right"><a href="{% url 'account:logout' %}"><font color='#ffffff' size='5'>登出 ({{ user.username }})</font></a></td>
+	<td align="right"><a href="{% url 'account:logout' %}"><font color='#ffffff' size='4'>登出 ({{ user.username }})</font></a></td>
 {% else %}
-	<td align="right"><a href="{% url 'account:login' %}"><font color='#ffffff' size='5'>登入</font></a></td>
+	<td align="right"><a href="{% url 'account:login' %}"><font color='#ffffff' size='4'>登入</font></a></td>
 {% endif %}
 
   </tr>
