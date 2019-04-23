@@ -1,8 +1,8 @@
 {% load staticfiles %}
-<table style="width:1700px;">
+<table style="width:100%">
   <tr>
-	<td style="width:250px"><a href="{% url 'main:main' %}"><font color='#ffffff'><h1>保齡球連結網站</h1></font></a></td>
-	<td style="width:1250px">
+	<td style="width:10%"><a href="{% url 'main:main' %}"><font color='#ffffff'><h1>保齡球連結網站</h1></font></a></td>
+	<td style="width:40%; align:left; ">
 		<nav><ul id="menu" >
 		  <li><a href="https://www.google.com.tw/" target="_blank"><img class='image' src="{% static 'main/img3/google.png' %}"> Google</a></li>
 		  <li><a href="https://www.youtube.com/?gl=TW" target="_blank"><img class='image' src="{% static 'main/img3/youtube.png' %}"> Youtube</a></li>
@@ -13,12 +13,12 @@
 		</ul></nav>
 	</td>
 {% if user.is_superuser %}
-	<td align="right"><a href="{% url 'account:register' %}"><font color='#ffffff' size='4'>註冊</font></a></td>
+	<td align="right" style="width:2%"><a href="{% url 'account:register' %}"><font style='color:#ffffff; size:4; font-align:right'>註冊</font></a></td>
 {% endif %}
 {% if user.is_authenticated %}
-	<td align="right"><a href="{% url 'account:logout' %}"><font color='#ffffff' size='4'>登出 ({{ user.username }})</font></a></td>
+	<td align="right" style="width:6%"><a href="{% url 'account:logout' %}"><font style='color:#ffffff; size:4; font-align:right'>登出 ({{ user.username }})</font></a></td>
 {% else %}
-	<td align="right"><a href="{% url 'account:login' %}"><font color='#ffffff' size='4'>登入</font></a></td>
+	<td align="right" style="width:6%"><a href="{% url 'account:login' %}"><font style='color:#ffffff; size:4; font-align:right'>登入</font></a></td>
 {% endif %}
 
   </tr>
