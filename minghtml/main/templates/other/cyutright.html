@@ -1,13 +1,5 @@
 {% load staticfiles %}
 <br>
-{% if user.is_authenticated %}
-<table class='tab'>
-  <tr><th class='tdtitle' colspan='3'>期中考公告</th></tr>
-  <tr><td class='tdall'><a href='https://drive.google.com/open?id=1G2_5tXoevIWlqS2N0AY_Ox-1cYMnl754' target="_blank"><font style="color:red;">期中考行事曆</font></a></td></tr>
-</table>
- 
-<p>
-{% endif %}
 <table class='tab'>
   <tr><th class='tdtitle' colspan='3'>公告專區</th></tr>
  {% if user.is_authenticated %} 
