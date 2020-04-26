@@ -11,14 +11,5 @@
 		  <li><a href="https://drive.google.com/drive" target="_blank"><img class='image' src="{% static 'main/img3/drive.png' %}"> GoogleDriver</a></li>
 		</ul></nav>
 	</td>
-{% if user.is_superuser %}
-	<td align="right" style="width:2%"><a href="{% url 'account:register' %}"><font style='color:#ffffff; size:4; font-align:right'>註冊</font></a></td>
-{% endif %}
-{% if user.is_authenticated %}
-	<td align="right" style="width:6%"><a href="{% url 'account:logout' %}"><font style='color:#ffffff; size:4; font-align:right'>登出 ({{ user.username }})</font></a></td>
-{% else %}
-	<td align="right" style="width:6%"><a href="{% url 'account:login' %}"><font style='color:#ffffff; size:4; font-align:right'>登入</font></a></td>
-{% endif %}
-
   </tr>
 </table>
