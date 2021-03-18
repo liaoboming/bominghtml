@@ -41,16 +41,27 @@
  </body>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <script>
+	 /*
   $(document).ready(function() {
-  $a = 0;
-  $b = 0;
+  $a = "";
+  $b = "";
   $sum = 0;
    $(document).on("click", "input[name=comp]", function() {
-	$a = $a.toString();
-	$a += $(this).val().toString();
-	console.log($a);
+	 $this = $(this).val();
+	 $a = $a.toString();
+	 $a += $this.toString();   
+
+	   
+	if(isNaN($this)){
+	
+	}else{
+
+	}
+	 $a = $a.toString();
+	 $a += $this.toString(); 
    });
 
   });
+  */
  </script>
 </html>
