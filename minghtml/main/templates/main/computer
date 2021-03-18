@@ -1,0 +1,25 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>保齡球連結網站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'main/css/div.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/account.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/two.css' %}">
+</head>
+<body>
+  <div id='all'>
+    <div id='header'>
+    {% include 'other/head.html' %}
+	</div>
+  	<div id='center'>
+  		
+  	</div>
+  <div id='footer'>
+      {% include 'other/footer.html' %}
+  </div>
+  </div>
+ </body>
+</html>
