@@ -18,6 +18,8 @@ def version(request):
 def connection(request):
     return render(request,'main/connection.html')
 
+def computer(request):
+    return render(request,'main/computer.html')
 
 def admin_required(func):
     def auth(request, *args, **kwargs):
