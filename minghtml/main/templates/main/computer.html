@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'main/css/div.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/account.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/two.css' %}">
 </head>
 <body>
@@ -45,7 +44,8 @@
   $(document).ready(function() {
   
    $(document).on("click", "input[name=comp]", function() {
-	alert($this.val());
+	console.log($(this).val());
+	//alert($this.val());
    });
 
   });
