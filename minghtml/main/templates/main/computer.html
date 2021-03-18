@@ -19,13 +19,13 @@
        <td colspan="3"></td>
       </tr>
       <tr>
-       <td name="comp" value="7">7</td>  <td name="comp" value="8">8</td>  <td name="comp" value="9">9</td>
+       <td><input type="button" name="comp" value="7"></td>  <td><input type="button" name="comp" value="8"></td>  <td><input type="button" name="comp" value="9"></td>
       </tr>
       <tr>
-       <td name="comp" value="4">4</td>  <td name="comp" value="5">5</td>  <td name="comp" value="6">6</td>
+       <td><input type="button" name="comp" value="4"></td>  <td><input type="button" name="comp" value="5"></td>  <td><input type="button" name="comp" value="6"></td>
       </tr>
       <tr>
-       <td name="comp" value="1">1</td>  <td name="comp" value="2">2</td>  <td name="comp" value="3">3</td>
+       <td><input type="button" name="comp" value="1"></td>  <td><input type="button" name="comp" value="2"></td>  <td><input type="button" name="comp" value="3"></td>
       </tr>
     </table>
     <div id='footer'>
@@ -38,7 +38,7 @@
   $(document).ready(function() {
   
    $(document).on("click", "input[name=comp]", function() {
-	alert("good");
+	alert($this.val());
    });
 
   });
