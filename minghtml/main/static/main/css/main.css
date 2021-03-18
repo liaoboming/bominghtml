@@ -14,12 +14,12 @@ nav ul#menu {
   font-size:25px;
   display: block;
   padding: 8px 8px 8px 8px;    
-  background-color:#dcdcdc;
-  border-radius: 15px;
+  /*background-color:#dcdcdc;*/
+  /*border-radius: 15px;*/
 }
 
 nav ul#menu li {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-right:0.5em;
   margin-left:0.5em;
 }
