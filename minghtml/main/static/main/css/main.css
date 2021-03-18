@@ -21,6 +21,7 @@ nav ul#menu {
 nav ul#menu li {
   /*display: inline-block;*/
   list-style:none;
+  text-align: left;
   margin-right:0.5em;
   margin-left:0.5em;
 }
