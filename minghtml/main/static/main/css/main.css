@@ -12,14 +12,10 @@ nav ul {
 }
 nav ul#menu {
   font-size:25px;
-  /*display: block;*/
-  padding: 8px 8px 8px 8px;    
-  /*background-color:#dcdcdc;*/
-  /*border-radius: 15px;*/
+  padding: 8px 8px 8px 8px;
 }
 
 nav ul#menu li {
-  /*display: inline-block;*/
   list-style:none;
   padding: 2px 0px 2px 2px;   
   text-align: left;
