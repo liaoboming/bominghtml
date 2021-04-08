@@ -7,9 +7,19 @@
       <link rel="stylesheet" href="{% static 'main/css/div.css' %}">
       <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
       <link rel="stylesheet" href="{% static 'main/css/two.css' %}">
+	  <style>
+	  .td_style{
+		text-align: left; 
+		padding: 2px 0px 6px 5px; 
+		font-size:25px;
+	  }
+	</style>
    </head>
    <body>
       <div id='all'>
+	      <div id='header'>
+			{% include 'other/head.html' %}
+		  </div>
          <div class="center">
             <table class='tab'>
                <tr>
@@ -49,6 +59,9 @@
                </tr>
             </table>
          </div>
+		   <div id='footer'>
+			{% include 'other/footer.html' %}
+		   </div>
       </div>
    </body>
 </html>
